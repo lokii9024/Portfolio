@@ -1,0 +1,103 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    text-wrap: wrap;
+    /* background: linear-gradient(to right,#66a6e5,#ffffff); */
+}
+
+.log{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    width: 40%;
+    text-align: center;
+    font-size: 3vmax;
+    height: 10vh;
+    font-weight: bold;
+    color: black;
+}
+
+.about{
+    height: 90vh;
+    display: flex;
+    background: linear-gradient(to right,#66a6e5,#ffffff);
+}
+
+.left{
+    width: 70%;
+    padding-top: 2.5vw;
+}
+
+.right{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left h3{
+    margin-left: 3vw;
+    font-size: 1.8vmax;
+    font-weight: 600;
+}
+
+.left ul{
+    padding-left: 10vw;
+    font-size: 1.2vmax;
+    font-weight: 200;
+    line-height: 3vw;
+}
+
+.left p{
+    margin-left: 10vw;
+    font-size: 1.2vmax;
+    font-weight: 200;
+    line-height: 2vw;
+}
+
+.right img{
+    width: 25vmax;
+}
+
+@media (max-width: 600px){
+    .about{
+        flex-direction: column-reverse;
+    }
+
+    .left{
+        height: 60%;
+        width: 100%;
+    }
+
+    .right{
+        height: 40%;
+        width: 100%;
+    }
+
+    .left h3{
+        margin-left: 4%;
+        font-size: 2.2vmax;
+        font-weight: 600;
+    }
+
+    .left ul{
+        padding-left: 12vw;
+        font-size: 1.6vmax;
+        font-weight: 200;
+        line-height: 5vw;
+    }
+    .left p{
+        margin-left: 12vw;
+        font-size: 1.6vmax;
+        font-weight: 200;
+        line-height: 5vw;
+    }
+}
