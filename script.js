@@ -1,14 +1,11 @@
-// script.js
 document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.getElementById('contactForm');
     const contactTable = document.getElementById('contactTable').getElementsByTagName('tbody')[0];
     const toggleTableButton = document.getElementById('Submissions');
     const tableSection = document.getElementById('tableSection');
 
-    // Load stored data from Local Storage
     loadTableData();
 
-    // Handle form submission
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
 
@@ -21,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
         contactForm.reset();
     });
 
-    // Toggle table visibility
     toggleTableButton.addEventListener('click', () => {
         tableSection.style.display = tableSection.style.display === 'none' ? 'block' : 'none';
         toggleTableButton.innerText = toggleTableButton.innerText ==='See Submissions'? 'Hide Submissions' : 'See Submissions';
