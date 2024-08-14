@@ -13,10 +13,10 @@
                 <input type='checkbox' id='check' />
                 <span class="menu">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About me</a></li>
+                    <li><a href="#">About me</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">projects</a></li>
-                    <li><a href="contact.html">Contact me</a></li>
+                    <li><a href="#contact">Contact me</a></li>
                     <li><a href="https://github.com/lokii9024/Portfolio"><button title="Source Code"><i class="fa-brands fa-github"></i></button></a></li>
                     <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
                 </span>
@@ -97,6 +97,40 @@
       </div>
   </div>
      </div>
+
+    <--------------contact form-------------------------->
+        <div class="contact-container" id="contact">
+        <form class="contact-left" id="contactForm">
+            <div class="contact-left-title">
+                <h2>Get in touch</h2>
+                <hr>
+            </div>
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required id="name">
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required id="email">
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required id="message"></textarea>
+            <button type="submit">Submit <i class='bx bx-right-arrow-alt'></i></button>
+            <button type="button" id="Submissions">See Submissions</button>
+        </form>
+        <div class="contact-right">
+            <img src="https://cdni.iconscout.com/illustration/premium/thumb/contact-us-6114172-5059493.png">
+        </div>
+    </div>
+
+    <section id="tableSection" style="display:none;">
+        <h2>Submitted Contacts</h2>
+        <table id="contactTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Message</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be inserted here -->
+            </tbody>
+        </table>
+    </section>
 
     <footer>
         <label class="logo">Portfolio.</label>
