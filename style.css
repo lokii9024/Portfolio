@@ -122,11 +122,30 @@
     font-weight: 800;
 }
 
-.right h3{
+.typed-out{
+    height: 1.5em;
+    overflow: hidden;
+    border-right: .10em solid blue;
     font-size: 2.5vmax;
     font-weight: 500;
     margin-top: 1vw;
     color: #66a6e5;
+    width: 0;
+    white-space: nowrap;
+    animation: typing 3s ease-in-out infinite;
+}
+
+.typewriter{
+    display: inline-block;
+}
+
+@keyframes typing{
+    from{
+        width:0;
+    }
+    to{
+        width: 100%;
+    }
 }
 
 .right h5{
