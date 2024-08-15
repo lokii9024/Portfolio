@@ -449,6 +449,7 @@
 }
 
 #tableSection{
+    overflow-x: auto;
     min-height: 30vh;
     background-color: #66a6e5;
     padding-left: 3vw;
